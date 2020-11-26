@@ -17,6 +17,10 @@ call plug#begin('~/.vim/plugins')
     Plug 'scrooloose/syntastic'                 " Syntax checking
 call plug#end()
 
+" scrooloose/nerdtree
+" toggle NERDTree
+noremap <c-t> :NERDTreeToggle <cr>
+
 " octol/vim-cpp-enhanced-highlight
 let g:cpp_class_scope_highlight = 1
 let g:cpp_member_variable_highlight = 1

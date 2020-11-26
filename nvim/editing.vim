@@ -1,7 +1,8 @@
-""" some own commands, automatic commands, mappings and abbreviations 
+"" some own commands, automatic commands, mappings and abbreviations 
 """ to simplify and speed up the editing of files 
 
-"" command line commands making life easier
+" commands {{{
+" command line commands making life easier
 command! W w
 command! Q q
 command! Wq wq
@@ -13,8 +14,9 @@ command! QA qa
 command! Wqa wqa
 command! WQa wqa
 command! WQA wqa
+" }}}
 
-"" automatic commands
+" automatic commands {{{
 augroup filetype_set
     autocmd!
     autocmd BufNewFile,BufRead *.nim    setlocal filetype=nim           " recognize *.nim files
@@ -29,15 +31,16 @@ augroup filetype_mappings
     autocmd FileType c,cpp,java nnoremap <buffer><leader>c I//<esc>     " comment out this line in C,C++,Java
     autocmd FileType python,nim nnoremap <buffer><leader>c I#<esc>      " comment out this line in Python,Nim
     autocmd FileType vim        nnoremap <buffer><leader>c I"<esc>      " comment out this line in VimL/VimScript
+    autocmd FileType vim        setlocal foldmethod=marker              " sets different folding method for vim filles
 augroup end
+" }}}
 
-
-"" some further mappings
+" mappings {{{
 
 " edit config in new splitted window
-nnoremap <leader>ecs :split $MYVIMRC<cr>
-nnoremap <leader>ecv :vsplit $MYVIMRC<cr>
-nnoremap <leader>sc  :source $MYVIMRC<cr>
+nnoremap <leader>ecs :split  $MYVIMRC <cr>
+nnoremap <leader>ecv :vsplit $MYVIMRC <cr>
+nnoremap <leader>sc  :source $MYVIMRC <cr>
 " write and quit
 nnoremap <c-s> :w<cr>
 inoremap <c-s> <esc>:w<cr>a
@@ -61,3 +64,4 @@ inoremap jk <esc>
 " toggle search-highlighting
 noremap <leader>hl :set hlsearch!<cr>
 
+" }}}
