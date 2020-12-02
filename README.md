@@ -14,11 +14,13 @@ Therefor read the instructions in the according chapters.
 
 ### `nvim` -  My configuration for neovim:
 
+```
 nvim
 ├── editing.vim
 ├── init.vim
 ├── plugins.vim
 └── settings.vim
+```
 
 The main file is `init.vim`.
 It sources the other files.
