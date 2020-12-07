@@ -42,4 +42,4 @@ To use this configuration with Vim you can also link the file `.vimrc` to `init.
 ```
 ln -s /path/to/mydotfiles/nvim/init.vim /$HOME/.vimrc
 ```
-Do not forget to link nvim directory under `$HOME/.config` or edit the file `init.vim` so that the called paths exist.
+Do not forget to link nvim directory under `$HOME/.config` or edit the file `init.vim` so that the other files can be found.
