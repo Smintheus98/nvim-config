@@ -36,10 +36,12 @@ ln -sf /path/to/mydotfiles/nvim ~/.config/
 ```
 To keep the configutation independent from the repository copying the directory is to be preferred.
 ```
+rm -rI ~/.config/nvim
 cp -R /path/to/mydotfiles/nvim ~/.config/
 ```
 For use of this configuration wit vanilla Vim the file `init.vim` needs to be linked to `~/.vimrc`.
 Remember to adapt the files accordingly.
 ```
+rm -i ~/.vimrc
 ln -s /path/to/mydotfiles/nvim/init.vim ~/.vimrc
 ```
