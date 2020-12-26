@@ -8,8 +8,7 @@ The Bash script `install.sh` installs everything automatically but still asks fo
 Please notice that I do not take any guarantee or warranty for the Software or loss of Data!
 For more information read the attached license.
 
-If You like You can also install some parts of this configuration manually.
-Therefor read the instructions in the according chapters.
+For manual installation of specific parts read the instructions in the concerning capters.
   
 
 ### `nvim` -  My configuration for neovim:
