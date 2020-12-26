@@ -32,12 +32,12 @@ The best way to do so is linking the dirctory under the `~/.config/` directory.
 !!! Be aware that this will overwrite the previous configuration !!!
 ```
 rm -rI ~/.config/nvim
-ln -sf /path/to/mydotfiles/nvim ~/.config/
+ln -s /path/to/mydotfiles/nvim ~/.config/
 ```
 To keep the configutation independent from the repository copying the directory is to be preferred.
 ```
 rm -rI ~/.config/nvim
-cp -R /path/to/mydotfiles/nvim ~/.config/
+cp -r /path/to/mydotfiles/nvim ~/.config/
 ```
 For use of this configuration wit vanilla Vim the file `init.vim` needs to be linked to `~/.vimrc`.
 Remember to adapt the files accordingly.
