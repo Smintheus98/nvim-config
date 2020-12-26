@@ -28,18 +28,18 @@ It sources the other files.
 * `settings.vim` contains some sets and unsets of specific Vim-options to my taste.
 * `editing.vim` contains definitions of commands, automatic commands, mappings (and abbreviations).
 
-To use this configuration it must be in a place, neovim will find.
-The best way to do so, is linking the dirctory to your `$HOME/.config/` directory.
+To use this configuration it must be placed where neovim will find.
+The best way to do so is linking the dirctory under the `~/.config/` directory.
+!!! Be aware that this will overwrite the previous configuration !!!
 ```
-ln -sf /path/to/mydotfiles/nvim $HOME/.config/
+ln -sf /path/to/mydotfiles/nvim ~/.config/
 ```
-If you want to keep your configs independent from the repository, it is better to copy the directory to the destination place.
+To keep the configutation independent from the repository copying the directory is to be preferred.
 ```
-cp -R /path/to/mydotfiles/nvim $HOME/.config/
+cp -R /path/to/mydotfiles/nvim ~/.config/
 ```
-
-To use this configuration with Vim you can also link the file `.vimrc` to `init.vim`
+For use of this configuration wit vanilla Vim the file `init.vim` needs to be linked to `~/.vimrc`.
+Remember to adapt the files accordingly.
 ```
-ln -s /path/to/mydotfiles/nvim/init.vim /$HOME/.vimrc
+ln -s /path/to/mydotfiles/nvim/init.vim ~/.vimrc
 ```
-Do not forget to link nvim directory under `$HOME/.config` or edit the file `init.vim` so that the other files can be found.
