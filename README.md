@@ -31,6 +31,7 @@ To use this configuration it must be placed where neovim will find.
 The best way to do so is linking the dirctory under the `~/.config/` directory.
 !!! Be aware that this will overwrite the previous configuration !!!
 ```
+rm -rI ~/.config/nvim
 ln -sf /path/to/mydotfiles/nvim ~/.config/
 ```
 To keep the configutation independent from the repository copying the directory is to be preferred.
