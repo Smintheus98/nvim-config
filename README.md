@@ -1,17 +1,17 @@
-# mydotfiles
+# nvim-config
 
-These are my Linux configuration dotfiles including zshrc, vimrc(nvim version) and some scripts.
+This is my configuration for neovim.
 
 ## Installation
 
-The Bash script `install.sh` installs everything automatically but still asks for permission before deleting anything.
+The Bash script `install.sh` installs the configuration automatically but still asks for permission before deleting anything.
 Please notice that I do not take any guarantee or warranty for the Software or loss of Data!
 For more information read the attached license.
 
-For manual installation of specific parts read the instructions in the concerning capters.
+For manual installation read the instructions below.
   
 
-### `nvim` -  My configuration for neovim:
+### Files:
 
 ```
 nvim
