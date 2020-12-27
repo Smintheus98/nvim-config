@@ -8,17 +8,18 @@ The Bash script `install.sh` installs everything automatically but still asks fo
 Please notice that I do not take any guarantee or warranty for the Software or loss of Data!
 For more information read the attached license.
 
-If You like You can also install some parts of this configuration manually.
-Therefor read the instructions in the according chapters.
+For manual installation of specific parts read the instructions in the concerning capters.
   
 
 ### `nvim` -  My configuration for neovim:
 
+```
 nvim
 ├── editing.vim
 ├── init.vim
 ├── plugins.vim
 └── settings.vim
+```
 
 The main file is `init.vim`.
 It sources the other files.
@@ -26,18 +27,21 @@ It sources the other files.
 * `settings.vim` contains some sets and unsets of specific Vim-options to my taste.
 * `editing.vim` contains definitions of commands, automatic commands, mappings (and abbreviations).
 
-To use this configuration it must be in a place, neovim will find.
-The best way to do so, is linking the dirctory to your `$HOME/.config/` directory.
+To use this configuration it must be placed where neovim will find.
+The best way to do so is linking the dirctory under the `~/.config/` directory.
+!!! Be aware that this will overwrite the previous configuration !!!
 ```
-ln -sf /path/to/mydotfiles/nvim $HOME/.config/
+rm -rI ~/.config/nvim
+ln -s /path/to/mydotfiles/nvim ~/.config/
 ```
-If you want to keep your configs independent from the repository, it is better to copy the directory to the destination place.
+To keep the configutation independent from the repository copying the directory is to be preferred.
 ```
-cp -R /path/to/mydotfiles/nvim $HOME/.config/
+rm -rI ~/.config/nvim
+cp -r /path/to/mydotfiles/nvim ~/.config/
 ```
-
-To use this configuration with Vim you can also link the file `.vimrc` to `init.vim`
+For use of this configuration wit vanilla Vim the file `init.vim` needs to be linked to `~/.vimrc`.
+Remember to adapt the files accordingly.
 ```
-ln -s /path/to/mydotfiles/nvim/init.vim /$HOME/.vimrc
+rm -i ~/.vimrc
+ln -s /path/to/mydotfiles/nvim/init.vim ~/.vimrc
 ```
-Do not forget to link nvim directory under `$HOME/.config` or edit the file `init.vim` so that the called paths exist.
