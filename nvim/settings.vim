@@ -1,4 +1,4 @@
-" for more information on a set option, open vim and type `:help 'option_name'` (without backticks)
+"" for more information on a set option, open vim and type `:help 'option_name'` (without backticks)
 
 set background=dark                             " set default color groups for dark background
 set backspace=indent,eol,start                  " makes <bs> work intuitively. See `:help 'backspace'`
@@ -31,11 +31,11 @@ set report=0                                    " report in last line if more th
 set cmdheight=1                                 " hight of last line
 set cmdwinheight=9                              " hight of command line window (:<c-f>)
 set statusline=%.25F                            " status line: filepath in max 25 characters
-set statusline+=%m                              " status line: modification-indicator
+set statusline+=%r%m                            " status line: modification-indicator
 set statusline+=\ %y                            " status line: filetype
 set statusline+=\ [%{&fileformat}]              " status line: fileformat (unix,dos,mac)
 set statusline+=\ [%{&fileencoding}]            " status line: fileencoding (unix,dos,mac)
-set statusline+=%#warningmsg#                   " status line: Warnings by syntastic plugin
+set statusline+=\ %#warningmsg#                 " status line: Warnings by syntastic plugin
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 set statusline+=%=                              " status line: split/right align
