@@ -1,6 +1,6 @@
 # mydotfiles
 
-These are my Linux configuration dotfiles including zshrc, vimrc(nvim version) and bspwmrc.
+These are my Linux configuration dotfiles including zshrc, vimrc(nvim version) and some scripts.
 
 ## Installation
 
