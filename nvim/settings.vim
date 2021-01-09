@@ -9,7 +9,7 @@ set history=200                                 " history length of used command
 set incsearch                                   " highlight matching strings while typing search pattern
 set hlsearch                                    " highlight all matching strings
 set nolangremap                                 " See `:help 'langremap'`
-set nrformats=bin,octal,hex,alpha               " make binary, octal and hexadecimal numbers and single alpabetical characters incrementable. See `:help 'nrformats'`
+set nrformats=bin,octal,hex                     " make binary, octal and hexadecimal numbers and single alpabetical characters incrementable. See `:help 'nrformats'`
 set scrolloff=3                                 " minimum of screen lines to keep above and below the cursor
 set sidescrolloff=8                             " minimum of screen columnes to keep to left and right of the cursor (when wrap is off)
 set suffixes=.~,.o,.out,.info,.swp,.aux,.bbl,.toc,.bak,.jpg,.png    " file suffixes with lower priority

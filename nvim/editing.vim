@@ -65,7 +65,15 @@ inoremap jk <esc>
 noremap <leader>nhl :nohlsearch<cr>
 " highlight trailing spaces as Error
 nnoremap <leader>w :match Error /\v\s+$/<cr>
+" stop highlight trailing spaces as Error
 nnoremap <leader>W :match Error //<cr>
 " auto insert \v for normal regex when searching
 nnoremap / /\v
+" grep operator  
+nnoremap <leader>g :silent execute "grep! -R " . shellescape(expand("<cWORD>")) . " ."<cr>:copen<cr>
+nnoremap <leader>n :cnext<cr>
+nnoremap <leader>p :cprevious<cr>
+" open new line below or above from insert mode
+inoremap <leader>m <esc>o
+inoremap <leader>M <esc>O
 " }}}
