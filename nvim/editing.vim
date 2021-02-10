@@ -27,10 +27,14 @@ augroup filetype_mappings
     autocmd!
     autocmd FileType tex        setlocal wrap                               " wrap lines for tex-files
     autocmd FileType tex        setlocal spell                              " check spell for tex-files
-    autocmd FileType c,cpp,java inoremap {<enter> {<enter>}<esc>O           " make pair of curly brackets and insert between these lines
-    autocmd FileType c,cpp,java nnoremap <buffer><leader>c I//<esc>         " comment out this line in C,C++,Java
-    autocmd FileType python,nim nnoremap <buffer><leader>c I#<esc>          " comment out this line in Python,Nim
-    autocmd FileType vim        nnoremap <buffer><leader>c I"<esc>          " comment out this line in VimL/VimScript
+    " make pair of curly brackets and insert between these lines
+    autocmd FileType c,cpp,java inoremap {<enter> {<enter>}<esc>O
+    " comment out this line in C,C++,Java
+    autocmd FileType c,cpp,java nnoremap <buffer><leader>c I//<esc>
+    " comment out this line in Python,Nim
+    autocmd FileType python,nim nnoremap <buffer><leader>c I#<esc>
+    " comment out this line in VimL/VimScript
+    autocmd FileType vim        nnoremap <buffer><leader>c I"<esc>
     autocmd FileType vim        setlocal foldmethod=marker                  " sets different folding method for vim filles
 augroup end
 " }}}
