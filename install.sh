@@ -8,9 +8,11 @@ if [[ -e $HOME/.config/nvim ]] ; then
     if [[ "$REPLACE_NVIM" == [yY]* ]] ; then
         rm -rf $HOME/.config/nvim
         ln -s $REPO_LOCATION/nvim $HOME/.config/nvim
+        mkdir -p $HOME/.cache/vim/{backup,swap,undo,view}
     fi
 else
     ln -sf $REPO_LOCATION/nvim $HOME/.config/nvim
+    mkdir -p $HOME/.cache/vim/{backup,swap,undo,view}
 fi
 
 read -p "Install vim-plug? [Y/n] " INST_VIMPLUG
@@ -19,7 +21,7 @@ if ! [[ "$INST_VIMPLUG" == [nN]* ]] ; then
     python3 -m pip install --user pynvim
     read -p "Install plugins? [Y/n] " INST_PLUGINS
     if ! [[ "$INST_PLUGINS" == [nN]* ]] ; then 
-        nvim +PlugInstall +qa --headless
+        nvim +PlugInstall +qa
     fi
 fi
 
