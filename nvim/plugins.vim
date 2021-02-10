@@ -13,7 +13,8 @@ call plug#begin('~/.vim/plugins')
     Plug 'octol/vim-cpp-enhanced-highlight'     " enhanced highlighting for C++
     Plug 'zah/nim.vim'                          " Support for the programming language Nim
     Plug 'lervag/vimtex'                        " LaTeX-support for vim
-    Plug 'valloric/youcompleteme'               " YouCompleteMe Auto Code-Completion Engine
+"    Plug 'valloric/youcompleteme'               " YouCompleteMe Auto Code-Completion Engine
+    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }   " dark powered neo-completion tool
     Plug 'scrooloose/syntastic'                 " Syntax checking
 call plug#end()
 
@@ -31,13 +32,16 @@ let g:cpp_concepts_highlight = 1
 " lervag/vimtex
 let g:tex_flavor = 'latex'
 
-" valloric/youcompleteme
-" install after pulling: `python ~/.vim/plugins/youcompleteme/install.py`
-" support for Nim: `git clone https://github.com/BitR/ycm-nimsuggest $HOME/.vim/bundle/YouCompleteMe/third_party/ycmd/ycmd/completers/nim`
-if has('nvim')
-    let g:python_host_prog = '/usr/bin/python2'
-    let g:python3_host_prog = '/usr/bin/python3'
-endif
+"" valloric/youcompleteme
+"" install after pulling: `python ~/.vim/plugins/youcompleteme/install.py`
+"" support for Nim: `git clone https://github.com/BitR/ycm-nimsuggest $HOME/.vim/bundle/YouCompleteMe/third_party/ycmd/ycmd/completers/nim`
+"if has('nvim')
+"    let g:python_host_prog = '/usr/bin/python2'
+"    let g:python3_host_prog = '/usr/bin/python3'
+"endif
+
+" Shougo/deoplete
+let g:deoplete#enable_at_startup = 1
 
 " scrooloose/syntastic
 let g:syntastic_always_populate_loc_list = 1
