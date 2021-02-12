@@ -20,6 +20,8 @@ if ! [[ "$INST_VIMPLUG" == [nN]* ]] ; then
     read -p "Install plugins? [Y/n] " INST_PLUGINS
     if ! [[ "$INST_PLUGINS" == [nN]* ]] ; then 
         nvim +PlugInstall +qa --headless
+        pip3 install --user pynvim
+        python3 ~/.vim/plugins/youcompleteme/install.py
     fi
 fi
 
