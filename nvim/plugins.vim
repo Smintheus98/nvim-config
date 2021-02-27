@@ -35,10 +35,10 @@ let g:tex_flavor = 'latex'
 "" valloric/youcompleteme
 "" install after pulling: `python ~/.vim/plugins/youcompleteme/install.py`
 "" support for Nim: `git clone https://github.com/BitR/ycm-nimsuggest $HOME/.vim/bundle/YouCompleteMe/third_party/ycmd/ycmd/completers/nim`
-"if has('nvim')
-"    let g:python_host_prog = '/usr/bin/python2'
-"    let g:python3_host_prog = '/usr/bin/python3'
-"endif
+if has('nvim')
+    let g:python_host_prog = '/usr/bin/python2'
+    let g:python3_host_prog = '/usr/bin/python3'
+endif
 
 " Shougo/deoplete
 let g:deoplete#enable_at_startup = 1
