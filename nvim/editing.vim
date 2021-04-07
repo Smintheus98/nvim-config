@@ -27,6 +27,9 @@ augroup filetype_mappings
     autocmd!
     autocmd FileType tex        setlocal wrap                               " wrap lines for tex-files
     autocmd FileType tex        setlocal spell                              " check spell for tex-files
+    autocmd FileType tex        setlocal tabstop=2
+    autocmd FileType tex        setlocal softtabstop=2
+    autocmd FileType tex        setlocal shiftwidth=2
     " make pair of curly brackets and insert between these lines
     autocmd FileType c,cpp,java inoremap {<enter> {<enter>}<esc>O
     " comment out this line in C,C++,Java
