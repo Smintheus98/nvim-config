@@ -16,7 +16,8 @@ call plug#begin('~/.vim/plugins')
 "    Plug 'valloric/youcompleteme'               " YouCompleteMe Auto Code-Completion Engine
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }   " dark powered neo-completion tool
     Plug 'scrooloose/syntastic'                 " Syntax checking
-    Plug 'evincarofautumn/kitten'
+    Plug 'evincarofautumn/kitten'               " Syntax highlighting for kitten programming language
+    Plug 'kovetskiy/sxhkd-vim'                  " Syntax highlighting for sxhkdrc
 call plug#end()
 
 " scrooloose/nerdtree
