@@ -83,4 +83,7 @@ nnoremap <leader>p :cprevious<cr>
 " open new line below or above from insert mode
 inoremap <leader>m <esc>o
 inoremap <leader>M <esc>O
+" paste from insertmode
+inoremap <leader>p <esc>p
+inoremap <leader>P <esc>P
 " }}}
