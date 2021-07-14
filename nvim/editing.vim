@@ -45,7 +45,7 @@ augroup end
 " mappings {{{
 
 " edit config in new splitted window
-nnoremap <leader>ecs :split  ~/.config/nvim <cr>
+nnoremap <leader>ec  :split  ~/.config/nvim <cr>
 nnoremap <leader>ecv :vsplit ~/.config/nvim <cr>
 nnoremap <leader>sc  :source $MYVIMRC <cr>
 " write and quit
@@ -76,13 +76,12 @@ nnoremap <leader>w :match Error /\v\s+$/<cr>
 nnoremap <leader>W :match Error //<cr>
 " auto insert \v for normal regex when searching
 nnoremap / /\v
-" grep operator  
-nnoremap <leader>g :silent execute "grep! -R " . shellescape(expand("<cWORD>")) . " ."<cr>:copen<cr>
-nnoremap <leader>n :cnext<cr>
-nnoremap <leader>p :cprevious<cr>
 " open new line below or above from insert mode
 inoremap <leader>o <esc>o
 inoremap <leader>O <esc>O
+" add new line below/above without leaving normal mode
+nnoremap <leader>o o<esc>
+nnoremap <leader>O O<esc>
 " paste from insertmode
 inoremap <leader>p <esc>p
 inoremap <leader>P <esc>P
