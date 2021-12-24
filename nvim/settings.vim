@@ -66,6 +66,7 @@ set foldmethod=syntax                           " automatic folding follows synt
 set nospell                                     " no spell checking by default
 set clipboard+=unnamedplus                      " add yanked text to clipboard automatically (nvim only)
 
+"colorscheme moriarty                           " my favored colorscheme
 colorscheme gotham256                           " my favored colorscheme
 
 let mapleader = "\\"                            " <leader>-key (escaped: '\')
