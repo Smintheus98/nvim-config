@@ -18,6 +18,7 @@ call plug#begin('~/.vim/plugins')
     Plug 'scrooloose/syntastic'                 " Syntax checking
     Plug 'evincarofautumn/kitten'               " Syntax highlighting for kitten programming language
     Plug 'kovetskiy/sxhkd-vim'                  " Syntax highlighting for sxhkdrc
+    Plug 'cespare/vim-toml', { 'branch': 'main' }   " Syntax highlighting for toml configuration files
 call plug#end()
 
 " scrooloose/nerdtree
@@ -38,7 +39,7 @@ let g:tex_flavor = 'latex'
 "" install after pulling: `python ~/.vim/plugins/youcompleteme/install.py`
 "" support for Nim: `git clone https://github.com/BitR/ycm-nimsuggest $HOME/.vim/bundle/YouCompleteMe/third_party/ycmd/ycmd/completers/nim`
 if has('nvim')
-    let g:python_host_prog = '/usr/bin/python2'
+    "let g:python_host_prog = '/usr/bin/python2'
     let g:python3_host_prog = '/usr/bin/python3'
 endif
 
