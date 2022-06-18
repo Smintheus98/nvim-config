@@ -14,7 +14,13 @@ call plug#begin('~/.vim/plugins')
     Plug 'zah/nim.vim'                          " Support for the programming language Nim
     Plug 'lervag/vimtex'                        " LaTeX-support for vim
 "    Plug 'valloric/youcompleteme'               " YouCompleteMe Auto Code-Completion Engine
+if has('nvim')
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }   " dark powered neo-completion tool
+else
+    Plug 'Shougo/deoplete.nvim'
+    Plug 'roxma/nvim-yarp'
+    Plug 'roxma/vim-hug-neovim-rpc'
+endif
     Plug 'scrooloose/syntastic'                 " Syntax checking
     Plug 'evincarofautumn/kitten'               " Syntax highlighting for kitten programming language
     Plug 'kovetskiy/sxhkd-vim'                  " Syntax highlighting for sxhkdrc
