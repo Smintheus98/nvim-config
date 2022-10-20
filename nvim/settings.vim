@@ -66,8 +66,13 @@ set foldmethod=syntax                           " automatic folding follows synt
 set nospell                                     " no spell checking by default
 set clipboard+=unnamedplus                      " add yanked text to clipboard automatically (nvim only)
 
-colorscheme gotham256                           " my favored colorscheme
+colorscheme gotham256                           " dark, blue
+"colorscheme moriarty                            " dark, contrast, gray
+"colorscheme moria                               " bright-dark
+"colorscheme gruvbox                             " solarized-dark
+"colorscheme molokai                             " dark, bright fg
+"colorscheme solarized8_dark_low                 " solarized-dark, bright fg, grass green
 
-let mapleader = "\\"                            " <leader>-key (escaped: '\')
+let mapleader = "¸"                             " <leader>-key (escaped: '¸')
 let maplocalleader = ","                        " <localleader>-key
 

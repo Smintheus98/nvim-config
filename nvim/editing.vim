@@ -20,8 +20,8 @@ command! WQA wqa
 augroup filetype_set
     autocmd!
     autocmd BufNewFile,BufRead *.nim    setlocal filetype=nim               " recognize *.nim files
-    autocmd BufNewFile,BufRead *.nims   setlocal filetype=nim               " recognize *.nims files
-    autocmd BufNewFile,BufRead *.t      setlocal filetype=cpp               " use *.t files as cpp-template-headers
+    autocmd BufNewFile,BufRead *.nims   setlocal filetype=nims              " recognize *.nims files
+    autocmd BufNewFile,BufRead *.nimble setlocal filetype=nims              " recognize *.nims files
 augroup end
 augroup filetype_mappings
     autocmd!
@@ -87,6 +87,6 @@ inoremap <leader>O <esc>O
 nnoremap <leader>o o<esc>
 nnoremap <leader>O O<esc>
 " paste from insertmode
-inoremap <leader>p <esc>p
-inoremap <leader>P <esc>P
+inoremap <leader>p <esc>pa
+inoremap <leader>P <esc>Pa
 " }}}
