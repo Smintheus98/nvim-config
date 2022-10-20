@@ -32,6 +32,10 @@ augroup filetype_mappings
     autocmd FileType tex            setlocal shiftwidth=2
     " make pair of curly brackets and insert between these lines
     autocmd FileType c,cpp,java     inoremap {<enter> {<enter>}<esc>O
+    " additional support for programming in kitten
+    autocmd FileType kitten         setlocal tabstop=2
+    autocmd FileType kitten         setlocal softtabstop=2
+    autocmd FileType kitten         setlocal shiftwidth=2
     " comment out this line in C,C++,Java
     autocmd FileType c,cpp,java     nnoremap <buffer><leader>c I//<esc>
     " comment out this line in Python,Nim
