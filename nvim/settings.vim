@@ -73,6 +73,6 @@ colorscheme gotham256                           " dark, blue
 "colorscheme molokai                             " dark, bright fg
 "colorscheme solarized8_dark_low                 " solarized-dark, bright fg, grass green
 
-let mapleader = "\\"                            " <leader>-key (escaped: '\')
+let mapleader = "¸"                             " <leader>-key (escaped: '¸')
 let maplocalleader = ","                        " <localleader>-key
 
