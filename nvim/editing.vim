@@ -25,24 +25,24 @@ augroup filetype_set
 augroup end
 augroup filetype_mappings
     autocmd!
-    autocmd FileType tex            setlocal wrap                               " wrap lines for tex-files
-    autocmd FileType tex            setlocal spell                              " check spell for tex-files
-    autocmd FileType tex            setlocal tabstop=2
-    autocmd FileType tex            setlocal softtabstop=2
-    autocmd FileType tex            setlocal shiftwidth=2
+    autocmd FileType tex                setlocal wrap                               " wrap lines for tex-files
+    autocmd FileType tex                setlocal spell                              " check spell for tex-files
+    autocmd FileType tex                setlocal tabstop=2
+    autocmd FileType tex                setlocal softtabstop=2
+    autocmd FileType tex                setlocal shiftwidth=2
     " make pair of curly brackets and insert between these lines
-    autocmd FileType c,cpp,java     inoremap {<enter> {<enter>}<esc>O
+    autocmd FileType c,cpp,java,r       inoremap {<enter> {<enter>}<esc>O
     " additional support for programming in kitten
-    autocmd FileType kitten         setlocal tabstop=2
-    autocmd FileType kitten         setlocal softtabstop=2
-    autocmd FileType kitten         setlocal shiftwidth=2
+    autocmd FileType kitten             setlocal tabstop=2
+    autocmd FileType kitten             setlocal softtabstop=2
+    autocmd FileType kitten             setlocal shiftwidth=2
     " comment out this line in C,C++,Java
-    autocmd FileType c,cpp,java     nnoremap <buffer><leader>c I//<esc>
-    " comment out this line in Python,Nim
-    autocmd FileType python,nim,sh  nnoremap <buffer><leader>c I#<esc>
+    autocmd FileType c,cpp,java         nnoremap <buffer><leader>c I//<esc>
+    " comment out this line in Python,Nim,Bash,R
+    autocmd FileType python,nim,sh,r    nnoremap <buffer><leader>c I#<esc>
     " comment out this line in VimL/VimScript
-    autocmd FileType vim            nnoremap <buffer><leader>c I"<esc>
-    autocmd FileType vim            setlocal foldmethod=marker                  " sets different folding method for vim filles
+    autocmd FileType vim                nnoremap <buffer><leader>c I"<esc>
+    autocmd FileType vim                setlocal foldmethod=marker                  " sets different folding method for vim filles
 augroup end
 " }}}
 
