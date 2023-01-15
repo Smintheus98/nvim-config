@@ -73,6 +73,9 @@ colorscheme gotham256                           " dark, blue
 "colorscheme molokai                             " dark, bright fg
 "colorscheme solarized8_dark_low                 " solarized-dark, bright fg, grass green
 
+set colorcolumn=101
+highlight ColorColumn ctermbg=Black guibg=Black
+
 let mapleader = "¸"                             " <leader>-key (escaped: '¸')
 let maplocalleader = ","                        " <localleader>-key
 
