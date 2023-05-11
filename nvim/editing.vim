@@ -22,6 +22,7 @@ augroup filetype_set
     autocmd BufNewFile,BufRead *.nim    setlocal filetype=nim               " recognize *.nim files
     autocmd BufNewFile,BufRead *.nims   setlocal filetype=nims              " recognize *.nims files
     autocmd BufNewFile,BufRead *.nimble setlocal filetype=nims              " recognize *.nims files
+    autocmd BufNewFile,BufRead *.red    setlocal filetype=rebol             " recognize *.red files (currently as rebol)
 augroup end
 augroup filetype_mappings
     autocmd!
@@ -32,6 +33,7 @@ augroup filetype_mappings
     autocmd FileType tex                setlocal shiftwidth=2
     " make pair of curly brackets and insert between these lines
     autocmd FileType c,cpp,java,r       inoremap {<enter> {<enter>}<esc>O
+    autocmd FileType rebol,red          inoremap [<enter> [<enter>]<esc>O<tab>
     " additional support for programming in kitten
     autocmd FileType kitten             setlocal tabstop=2
     autocmd FileType kitten             setlocal softtabstop=2
