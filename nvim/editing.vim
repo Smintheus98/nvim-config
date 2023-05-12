@@ -26,8 +26,8 @@ augroup filetype_set
 augroup end
 augroup filetype_mappings
     autocmd!
-    autocmd FileType tex                setlocal wrap                               " wrap lines for tex-files
-    autocmd FileType tex                setlocal spell                              " check spell for tex-files
+    autocmd FileType tex,markdown       setlocal wrap                               " wrap lines for tex and markdown files
+    autocmd FileType tex                setlocal spell                              " check spell for tex files
     autocmd FileType tex                setlocal tabstop=2
     autocmd FileType tex                setlocal softtabstop=2
     autocmd FileType tex                setlocal shiftwidth=2
