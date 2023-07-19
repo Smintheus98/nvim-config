@@ -31,6 +31,8 @@ augroup filetype_mappings
     autocmd FileType tex                setlocal tabstop=2
     autocmd FileType tex                setlocal softtabstop=2
     autocmd FileType tex                setlocal shiftwidth=2
+    autocmd FileType tex                nnoremap <c-enter> :make<enter>
+    autocmd FileType tex                inoremap <c-enter> <esc>:make<enter>i
     " make pair of curly brackets and insert between these lines
     autocmd FileType c,cpp,java,r       inoremap {<enter> {<enter>}<esc>O
     autocmd FileType rebol,red          inoremap [<enter> [<enter>]<esc>O<tab>
