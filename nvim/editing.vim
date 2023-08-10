@@ -26,13 +26,14 @@ augroup filetype_set
 augroup end
 augroup filetype_mappings
     autocmd!
+    autocmd FileType tex,markdown       setlocal colorcolumn=0
     autocmd FileType tex,markdown       setlocal wrap                               " wrap lines for tex and markdown files
     autocmd FileType tex                setlocal spell                              " check spell for tex files
     autocmd FileType tex                setlocal tabstop=2
     autocmd FileType tex                setlocal softtabstop=2
     autocmd FileType tex                setlocal shiftwidth=2
-    autocmd FileType tex                nnoremap <c-enter> :make<enter>
-    autocmd FileType tex                inoremap <c-enter> <esc>:make<enter>i
+    autocmd FileType tex                nnoremap <c-enter> :w<cr>:make<cr><cr>
+    autocmd FileType tex                inoremap <c-enter> <esc>:w<cr>:make<cr>i
     " make pair of curly brackets and insert between these lines
     autocmd FileType c,cpp,java,r       inoremap {<enter> {<enter>}<esc>O
     autocmd FileType rebol,red          inoremap [<enter> [<enter>]<esc>O<tab>
