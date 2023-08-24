@@ -29,9 +29,9 @@ augroup filetype_mappings
     autocmd FileType tex,markdown       setlocal colorcolumn=0
     autocmd FileType tex,markdown       setlocal wrap                               " wrap lines for tex and markdown files
     autocmd FileType tex                setlocal spell                              " check spell for tex files
-    autocmd FileType tex                setlocal tabstop=2
-    autocmd FileType tex                setlocal softtabstop=2
-    autocmd FileType tex                setlocal shiftwidth=2
+    autocmd FileType tex,r              setlocal tabstop=2
+    autocmd FileType tex,r              setlocal softtabstop=2
+    autocmd FileType tex,r              setlocal shiftwidth=2
     autocmd FileType tex                nnoremap <c-enter> :w<cr>:make<cr><cr>
     autocmd FileType tex                inoremap <c-enter> <esc>:w<cr>:make<cr>i
     " make pair of curly brackets and insert between these lines
