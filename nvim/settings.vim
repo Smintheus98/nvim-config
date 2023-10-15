@@ -63,6 +63,7 @@ set mouse=a                                     " activate mouse in all modes
 set foldenable                                  " activate folding
 set foldcolumn=2                                " width of folding-bar on the left
 set foldmethod=syntax                           " automatic folding follows syntax
+set foldlevelstart=99                           " open files in unfolded mode (as long as the code doesn't exceed the set fold level)
 set nospell                                     " no spell checking by default
 set clipboard+=unnamedplus                      " add yanked text to clipboard automatically (nvim only)
 
