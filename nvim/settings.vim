@@ -80,3 +80,11 @@ highlight ColorColumn ctermbg=Black guibg=Black
 let mapleader = "¸"                             " <leader>-key (escaped: '¸')
 let maplocalleader = ","                        " <localleader>-key
 
+" 
+" magma config:
+nnoremap <silent><expr> <leader>r  :MagmaEvaluateOperator<CR>
+nnoremap <silent>       <leader>rr :MagmaEvaluateLine<CR>
+xnoremap <silent>       <leader>r  :<C-u>MagmaEvaluateVisual<CR>
+nnoremap <silent>       <leader>rc :MagmaReevaluateCell<CR>
+nnoremap <silent>       <leader>rd :MagmaDelete<CR>
+nnoremap <silent>       <leader>ro :MagmaShowOutput<CR>

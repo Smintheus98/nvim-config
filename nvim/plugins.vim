@@ -25,6 +25,7 @@ endif
     Plug 'evincarofautumn/kitten'               " Syntax highlighting for kitten programming language
     Plug 'kovetskiy/sxhkd-vim'                  " Syntax highlighting for sxhkdrc
     Plug 'cespare/vim-toml', { 'branch': 'main' }   " Syntax highlighting for toml configuration files
+    Plug 'dccsillag/magma-nvim', { 'do': ':UpdateRemotePlugins' }
 call plug#end()
 
 " scrooloose/nerdtree
@@ -58,3 +59,23 @@ let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+
+" magma config:
+"nnoremap <silent><expr> <LocalLeader>r  :MagmaEvaluateOperator<CR>
+"nnoremap <silent>       <LocalLeader>rr :MagmaEvaluateLine<CR>
+"xnoremap <silent>       <LocalLeader>r  :<C-u>MagmaEvaluateVisual<CR>
+"nnoremap <silent>       <LocalLeader>rc :MagmaReevaluateCell<CR>
+"nnoremap <silent>       <LocalLeader>rd :MagmaDelete<CR>
+"nnoremap <silent>       <LocalLeader>ro :MagmaShowOutput<CR>
+
+let g:magma_automatically_open_output = v:false
+"let g:magma_image_provider = "ueberzug"
+let g:magma_image_provider = "kitty"
+
+function MagmaInitPython()
+    :MagmaInit python3
+    :MagmaEvaluateArgument a=5
+endfunction
+
+:command MagmaInitPython lua MagmaInitPython()
+":command MagmaInit       lua MagmaInit()
