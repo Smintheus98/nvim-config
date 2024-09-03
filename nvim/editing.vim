@@ -33,7 +33,10 @@ augroup filetype_mappings
     autocmd FileType tex                setlocal softtabstop=2
     autocmd FileType tex                setlocal shiftwidth=2
     autocmd FileType tex                nnoremap <c-enter> :w<cr>:make<cr><cr>
-    autocmd FileType tex                inoremap <c-enter> <esc>:w<cr>:make<cr>i
+    "autocmd FileType tex                inoremap <c-enter> <esc>:w<cr>:make<cr>i
+    autocmd FileType tex                inoremap <c-enter> <esc>:w<cr>:!make &>/dev/null &<cr>a
+    "autocmd FileType tex                nnoremap <c-i> o\begin{itemize}<enter>\end{itemize}<esc>O\item <esc>
+    "autocmd FileType tex                inoremap <c-i> \begin{itemize}<enter>\end{itemize}<esc>O\item 
     " make pair of curly brackets and insert between these lines
     autocmd FileType c,cpp,java,r       inoremap {<enter> {<enter>}<esc>O
     autocmd FileType rebol,red          inoremap [<enter> [<enter>]<esc>O<tab>
@@ -94,4 +97,6 @@ nnoremap <leader>O O<esc>
 " paste from insertmode
 inoremap <leader>p <esc>pa
 inoremap <leader>P <esc>Pa
+" delete entire word while writing
+inoremap <c-backspace> <esc>vbs
 " }}}
