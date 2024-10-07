@@ -30,7 +30,7 @@ set showcmd                                     " additional information about s
 set report=0                                    " report in last line if more than 'report' lines changed
 set cmdheight=1                                 " hight of last line
 set cmdwinheight=9                              " hight of command line window (:<c-f>)
-set statusline=%.25F                            " status line: filepath in max 25 characters
+set statusline=%.85F                           " status line: filepath in max 25 characters
 set statusline+=%r%m                            " status line: modification-indicator
 set statusline+=\ %y                            " status line: filetype
 set statusline+=\ [%{&fileformat}]              " status line: fileformat (unix,dos,mac)
