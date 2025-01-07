@@ -67,7 +67,8 @@ set foldlevelstart=99                           " open files in unfolded mode (a
 set nospell                                     " no spell checking by default
 set clipboard+=unnamedplus                      " add yanked text to clipboard automatically (nvim only)
 
-colorscheme gotham256                           " dark, blue
+colorscheme ghost256                             " dark, blue
+"colorscheme gotham256                           " dark, blue
 "colorscheme moriarty                            " dark, contrast, gray
 "colorscheme moria                               " bright-dark
 "colorscheme gruvbox                             " solarized-dark
