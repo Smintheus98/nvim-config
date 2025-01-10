@@ -52,7 +52,7 @@ set nowrap                                      " do not wrap lines
 set ignorecase                                  " ignore case in searching
 set autoindent                                  " indent automatically
 set tabstop=4                                   " tabulator width in columns
-set softtabstop=4                               " soft tabulator width. May consist of tabs and spaces. See `:help 'tabstop'`
+"set softtabstop=4                               " soft tabulator width. May consist of tabs and spaces. See `:help 'tabstop'`
 set shiftwidth=4                                " width of autoindent, cindent, >> and << operations
 set shiftround                                  " rounding shift with >> and << to a factor of shiftwidth
 set expandtab                                   " expand tabulators to spaces
