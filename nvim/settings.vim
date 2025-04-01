@@ -66,6 +66,8 @@ set foldmethod=syntax                           " automatic folding follows synt
 set foldlevelstart=99                           " open files in unfolded mode (as long as the code doesn't exceed the set fold level)
 set nospell                                     " no spell checking by default
 set clipboard+=unnamedplus                      " add yanked text to clipboard automatically (nvim only)
+set splitbelow                                  " open new split below by default (like `:rightbelow sp`)
+set splitright                                  " open new vsplit right by default (like `:rightbelow vsp`)
 
 colorscheme gotham256                           " dark, blue
 "colorscheme moriarty                            " dark, contrast, gray
