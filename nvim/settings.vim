@@ -30,7 +30,7 @@ set showcmd                                     " additional information about s
 set report=0                                    " report in last line if more than 'report' lines changed
 set cmdheight=1                                 " hight of last line
 set cmdwinheight=9                              " hight of command line window (:<c-f>)
-set statusline=%.25F                            " status line: filepath in max 25 characters
+set statusline=%.85F                           " status line: filepath in max 25 characters
 set statusline+=%r%m                            " status line: modification-indicator
 set statusline+=\ %y                            " status line: filetype
 set statusline+=\ [%{&fileformat}]              " status line: fileformat (unix,dos,mac)
@@ -52,7 +52,7 @@ set nowrap                                      " do not wrap lines
 set ignorecase                                  " ignore case in searching
 set autoindent                                  " indent automatically
 set tabstop=4                                   " tabulator width in columns
-set softtabstop=4                               " soft tabulator width. May consist of tabs and spaces. See `:help 'tabstop'`
+"set softtabstop=4                               " soft tabulator width. May consist of tabs and spaces. See `:help 'tabstop'`
 set shiftwidth=4                                " width of autoindent, cindent, >> and << operations
 set shiftround                                  " rounding shift with >> and << to a factor of shiftwidth
 set expandtab                                   " expand tabulators to spaces
@@ -69,7 +69,8 @@ set clipboard+=unnamedplus                      " add yanked text to clipboard a
 set splitbelow                                  " open new split below by default (like `:rightbelow sp`)
 set splitright                                  " open new vsplit right by default (like `:rightbelow vsp`)
 
-colorscheme gotham256                           " dark, blue
+colorscheme ghost256                             " dark, blue
+"colorscheme gotham256                           " dark, blue
 "colorscheme moriarty                            " dark, contrast, gray
 "colorscheme moria                               " bright-dark
 "colorscheme gruvbox                             " solarized-dark
