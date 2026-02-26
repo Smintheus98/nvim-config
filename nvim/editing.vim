@@ -24,8 +24,6 @@ augroup filetype_set
     autocmd BufNewFile,BufRead *.nimble setlocal filetype=nims              " recognize *.nims files
     autocmd BufNewFile,BufRead *.red    setlocal filetype=rebol             " recognize *.red files (currently as rebol)
     autocmd BufNewFile,BufRead *.reds   setlocal filetype=rebol             " recognize *.reds files (currently as rebol)
-    autocmd BufNewFile,BufRead *.ipy    setlocal filetype=python
-    "autocmd BufNewFile,BufRead *.ipy    :MagmaInit python3
 augroup end
 augroup filetype_mappings
     autocmd!
